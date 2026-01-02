@@ -1,35 +1,65 @@
-# Deploying Local Multi-PDF Chatbot to Another Computer
+# Local Multi-PDF Chatbot 🤖📚
 
-To run this application on another computer, follow these steps:
+A privacy-focused, local RAG (Retrieval-Augmented Generation) application that allows you to chat with multiple PDF documents using local AI models. Built with **Streamlit**, **LangChain**, and **Ollama**.
 
-## Prerequisites
+## 🌟 Features
 
-1.  **Install Python**: Download and install Python (version 3.10 or higher recommended) from [python.org](https://www.python.org/).
-2.  **Install Ollama**: Download and install Ollama from [ollama.com](https://ollama.com/).
+*   **100% Local Processing**: No data leaves your machine. Your documents stay private.
+*   **Multi-PDF Support**: Upload and process multiple PDF manuals or documents at once.
+*   **Local AI Models**: Integration with [Ollama](https://ollama.com) to use models like Llama 3, Mistral, or Gemma.
+*   **Vector Search**: Uses FAISS and HuggingFace embeddings for efficient document retrieval.
+*   **Chat History**: Interactive chat interface with the ability to **download your chat history**.
 
-## Setup Instructions
+## 🛠️ Tech Stack
 
-1.  **Copy Files**: Copy this entire project folder to the new computer.
-    *   Ensure you have `app.py`, `requirements.txt`, and the `utils/` folder.
+*   **Frontend**: [Streamlit](https://streamlit.io/)
+*   **Framework**: [LangChain](https://www.langchain.com/) (LCEL)
+*   **LLM Backend**: [Ollama](https://ollama.com/)
+*   **Vector Store**: [FAISS](https://github.com/facebookresearch/faiss)
+*   **Embeddings**: [HuggingFace](https://huggingface.co/) (`all-MiniLM-L6-v2`)
 
-2.  **Open Terminal**: Open Command Prompt or PowerShell and navigate to the project folder:
-    ```powershell
-    cd path/to/your/folder
+## 🚀 Getting Started
+
+### Prerequisites
+
+1.  **Python 3.10+** installed.
+2.  **Ollama** installed and running.
+    *   Download from [ollama.com](https://ollama.com).
+    *   Pull a model: `ollama pull llama3`
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/local-pdf-chatbot.git
+    cd local-pdf-chatbot
     ```
 
-3.  **Install Dependencies**: Run the following command to install the required Python libraries:
-    ```powershell
+2.  Install dependencies:
+    ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Download AI Model**: Pull the AI model you want to use (e.g., Llama 3) using Ollama:
-    ```powershell
-    ollama pull llama3
-    ```
+### Usage
 
-5.  **Run the App**: Start the application with this command:
-    ```powershell
+1.  Start the app:
+    ```bash
     python -m streamlit run app.py
     ```
 
-6.  **Access the App**: The app should open automatically in your browser. If not, go to `http://localhost:8501`.
+2.  Open your browser to `http://localhost:8501`.
+
+3.  **Sidebar Setup**:
+    *   Select your Ollama model from the dropdown.
+    *   Upload your PDF documents.
+    *   Click **Process**.
+
+4.  **Chat**: Ask questions about your documents!
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+[MIT](https://choosealicense.com/licenses/mit/)
