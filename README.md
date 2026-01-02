@@ -19,42 +19,9 @@ A privacy-focused, local RAG (Retrieval-Augmented Generation) application that a
 *   **Embeddings**: [HuggingFace](https://huggingface.co/) (`all-MiniLM-L6-v2`)
 
 ## 🚀 Getting Started
+*   Open the file Version 2, follow the instuction
 
-### Prerequisites
 
-1.  **Python 3.10+** installed.
-2.  **Ollama** installed and running.
-    *   Download from [ollama.com](https://ollama.com).
-    *   Pull a model: `ollama pull llama3`
-
-### Installation
-
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/KevinKoay/Local-Multi-PDF-chatbot.git
-    cd local-pdf-chatbot
-    ```
-
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Usage
-
-1.  Start the app:
-    ```bash
-    python -m streamlit run app.py
-    ```
-
-2.  Open your browser to `http://localhost:8501`.
-
-3.  **Sidebar Setup**:
-    *   Select your Ollama model from the dropdown.
-    *   Upload your PDF documents.
-    *   Click **Process**.
-
-4.  **Chat**: Ask questions about your documents!
 
 ## 📄 License
 
