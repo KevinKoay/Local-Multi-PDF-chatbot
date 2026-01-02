@@ -56,10 +56,6 @@ A privacy-focused, local RAG (Retrieval-Augmented Generation) application that a
 
 4.  **Chat**: Ask questions about your documents!
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📄 License
 
 [MIT](https://choosealicense.com/licenses/mit/)
