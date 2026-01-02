@@ -31,7 +31,7 @@ A privacy-focused, local RAG (Retrieval-Augmented Generation) application that a
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/KevinKoay/local-pdf-chatbot.git
+    git clone https://github.com/KevinKoay/Local-Multi-PDF-chatbot.git
     cd local-pdf-chatbot
     ```
 
